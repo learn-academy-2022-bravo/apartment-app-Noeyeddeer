@@ -14,7 +14,7 @@ import Header from './Header'
 Enzyme.configure({ adapter: new Adapter() })
 
 describe("When Header renders", () => {
-  it("displays four NavItems", () => {
+  it("displays one Nav", () => {
     const header = shallow(<Header />)
     const headerHeading = header.find("Nav")
     expect(headerHeading.length).toEqual(1)
