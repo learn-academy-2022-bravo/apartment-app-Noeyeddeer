@@ -16,7 +16,7 @@ Enzyme.configure({ adapter: new Adapter() })
 describe("When ApartmentShow renders", () => {
   it("displays a heading", () => {
     const apartmentShow = shallow(<ApartmentShow />)
-    const apartmentShowHeading = apartmentShow.find("h3")
-    expect(apartmentShowHeading.text()).toEqual("This Should Fail")
+    const apartmentShowHeading = apartmentShow.find("h1")
+    expect(apartmentShowHeading.text()).toEqual("Find Your Dream Apartment")
   })
 })
