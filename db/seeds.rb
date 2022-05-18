@@ -14,6 +14,13 @@ apartments = [
   }
 ]
 
+users = [
+  {
+    email: 'test@example.com',
+    encrypted_password: 'Test123'
+  }
+]
+
 apartments.each do |each_apartment|
   Apartment.create each_apartment
   puts "creating apartment #{each_apartment}"
